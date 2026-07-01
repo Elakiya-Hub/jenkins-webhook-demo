@@ -13,7 +13,7 @@ pipeline {
     post {
         success {
             emailext(
-                to: 'YOUR_EMAIL@gmail.com',
+                to: 'elakiyasabarinath@gmail.com',
                 subject: "SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
 Hello,
@@ -35,7 +35,7 @@ Jenkins
 
         failure {
             emailext(
-                to: 'YOUR_EMAIL@gmail.com',
+                to: 'elakiyasabarinath@gmail.com',
                 subject: "FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
 Hello,
